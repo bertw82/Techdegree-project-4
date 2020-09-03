@@ -1,21 +1,20 @@
 // ----- Grid ----- /
 
 .container {
-  padding: 0 10px;
+  padding: 0 $gutter;
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
-  padding: 1em 10px;
+  @include flexb($dir: column);
+  padding: 1em $gutter;
 }
 
 [class^=col] {
-  margin-top: 10px;
-  flex-basis: 100%;
-  min-height: 25px;
-  padding: 10px;
-  border-radius: 5px;
+  margin-top: $gutter;
+  flex-basis: $max-wh;
+  min-height: px-to-em(25, 16);
+  padding: $gutter;
+  border-radius: px-to-em(5, 16);
 }
 
 .theme.col-1 {
@@ -67,22 +66,19 @@
 }
 
 .card {
-  flex-basis: 100%;
+  flex-basis: $max-wh;
 }
 
 @media (min-width: 768px) {
 
   .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include center {
+      max-width: 1400px;
+    }
   }
   
   .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include center;
   }
   
   .row {
@@ -90,14 +86,12 @@
   }
   
   [class^=col] {
-    display: flex;
-    justify-content: center;
+    @include flexb($just: center, $align: center);
     margin-top: 0;
-    align-items: center;
   }
   
   [class^=col] + [class^=col] {
-    margin-left: 10px;
+    margin-left: $gutter;
   }
   
   .col-1 {

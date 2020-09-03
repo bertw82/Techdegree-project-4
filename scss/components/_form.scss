@@ -7,9 +7,9 @@
 .input{
   display: block;
   width: 94%;
-  margin: $ten-px auto 0;
+  margin: $gutter auto 0;
   border: none;
-  padding: $ten-px;
+  padding: $gutter;
   border-bottom: px-to-em(5, 16) solid $color-primary;
 }
 

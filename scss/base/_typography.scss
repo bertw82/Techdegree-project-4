@@ -16,7 +16,7 @@ a {
 
 .headline-primary {
   color: $color-primary;
-  margin-left: px-to-em(10, 16);
+  margin-left: $gutter;
 }
 
 .headline-secondary {

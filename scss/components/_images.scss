@@ -9,13 +9,13 @@
 .img {
   &-avatar {
     @extend %img;
-    margin-top: 10px;
+    margin-top: $gutter;
     max-width: $max-wh; 
     max-height: $max-wh;
   }
   &-frame {
     @extend %img;
-    margin-top: 10px;
+    margin-top: $gutter;
     max-width: $max-wh;
     padding: 13px;
     border: 1px solid $color-img-border;

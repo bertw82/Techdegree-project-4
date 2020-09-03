@@ -5,7 +5,7 @@
   width: $max-wh;
   color: $white;
   border: none;
-  padding: $ten-px 0;
+  padding: $gutter 0;
   text-transform: uppercase;
   border-radius: px-to-em(5, 16);
 }
@@ -33,11 +33,11 @@
 @media (min-width: 768px) {
 
   .btn {
-    padding: $ten-px px-to-em(30, 16);
+    padding: $gutter px-to-em(30, 16);
   }
   
   .btn + .btn {
-    margin-left: $ten-px;
+    margin-left: $gutter;
   }
   
 }
