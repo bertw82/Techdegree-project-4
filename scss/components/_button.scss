@@ -1,13 +1,13 @@
 // ----- Buttons ----- /
 
 .btn {
-  margin-top: 15px;
-  width: 100%;
-  // color: $white;
+  margin-top: px-to-em(15, 16);
+  width: $max-wh;
+  color: $white;
   border: none;
-  padding: 10px 0;
+  padding: $ten-px 0;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: px-to-em(5, 16);
 }
 
 .default {
@@ -33,11 +33,11 @@
 @media (min-width: 768px) {
 
   .btn {
-    padding: 10px 30px;
+    padding: $ten-px px-to-em(30, 16);
   }
   
   .btn + .btn {
-    margin-left: 10px;
+    margin-left: $ten-px;
   }
   
 }

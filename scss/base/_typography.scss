@@ -16,7 +16,7 @@ a {
 
 .headline-primary {
   color: $color-primary;
-  margin-left: 10px;
+  margin-left: px-to-em(10, 16);
 }
 
 .headline-secondary {
@@ -33,8 +33,8 @@ a {
   font-size: 1.5em;
   font-weight: 300;
   font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 8px solid $color-primary;
-  border-radius: 5px;
+  margin-left: px-to-em(20, 16);
+  padding-left: px-to-em(20, 16);
+  border-left: px-to-em(8, 16) solid $color-primary;
+  border-radius: px-to-em(5, 16);
 }

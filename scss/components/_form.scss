@@ -1,16 +1,16 @@
 // ----- Forms ----- /
 
 .form {
-  flex-basis: 100%;
+  flex-basis: $max-wh;
 }
 
 .input{
   display: block;
   width: 94%;
-  margin: 10px auto 0;
+  margin: $ten-px auto 0;
   border: none;
-  padding: 10px;
-  border-bottom: 5px solid $color-primary;
+  padding: $ten-px;
+  border-bottom: px-to-em(5, 16) solid $color-primary;
 }
 
 .hidden {
