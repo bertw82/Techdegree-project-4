@@ -3,3 +3,17 @@
 @function px-to-em($a, $b) {
   @return ($a / $b) * 1em;
 }
+
+// @function hover() {
+//   @return 
+// }
+
+@function em-to-pc($target, $context: $max-width) {
+  @return ($target / $context) * 100%;
+}
+
+@function per-line($items) {
+  $g-pct: em-to-pc($gutter) * 2;
+  $g-total: $items * $g-pct;
+  @return (100% / $items) - $g-total;
+}
