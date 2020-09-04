@@ -31,4 +31,12 @@
     }
   }
 
-  
+  // ----- Colors ----- / 
+
+  @mixin themes($map) {
+    @each $number, $color in $map {
+      &-#{$number} {
+        background-color: $color;
+      }
+    }
+  }
