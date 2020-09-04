@@ -11,7 +11,13 @@
   @include mq {
     padding: $gutter px-to-em(30, 16);
   }
+  & + .btn {
+  @include mq {
+  margin-left: $gutter;
+    }
+  }
 }
+
 
 .default {
   background-color: $color-secondary;
@@ -33,14 +39,4 @@
   background-color: #fd7856;
 }
 
-// @media (min-width: 768px) {
-
-//   .btn {
-//     padding: $gutter px-to-em(30, 16);
-//   }
-  
-  // .btn + .btn {
-  //   margin-left: $gutter;
-  // }
-  
 

@@ -22,14 +22,10 @@
   }
   &-logo {
     @extend %img;
+    @include mq {
+      margin-left: initial;
+      margin-right: initial;
+    }
   }
 }
 
-@media (min-width: 768px) {
-
-.logo {
-  margin-left: initial;
-  margin-right: initial;
-}
-
-}

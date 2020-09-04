@@ -2,11 +2,19 @@
 
 .container {
   padding: 0 $gutter;
+  @include mq {
+    @include center {
+      max-width: 1400px;
+    }
+  }
 }
 
 .row {
   @include flexb($dir: column);
   padding: 1em $gutter;
+  @include mq {
+    flex-direction: row;
+  }
 }
 
 [class^=col] {
@@ -15,6 +23,25 @@
   min-height: px-to-em(25, 16);
   padding: $gutter;
   border-radius: px-to-em(5, 16);
+  @include mq {
+    @include flexb($just: center, $align: center);
+    margin-top: 0;
+  }
+  & + [class^=col] {
+    @include mq {
+      margin-left: $gutter;
+    }
+  }
+}
+
+.card {
+  flex-basis: $max-wh;
+}
+
+.centered {
+  @mixin mq {
+    @include center;
+  }
 }
 
 .theme.col-1 {
@@ -65,34 +92,9 @@
   background-color: #80e8d1;
 }
 
-.card {
-  flex-basis: $max-wh;
-}
+
 
 @media (min-width: 768px) {
-
-  .container {
-    @include center {
-      max-width: 1400px;
-    }
-  }
-  
-  .centered {
-    @include center;
-  }
-  
-  .row {
-    flex-direction: row;
-  }
-  
-  [class^=col] {
-    @include flexb($just: center, $align: center);
-    margin-top: 0;
-  }
-  
-  [class^=col] + [class^=col] {
-    margin-left: $gutter;
-  }
   
   .col-1 {
     flex-basis: 8.33%;
