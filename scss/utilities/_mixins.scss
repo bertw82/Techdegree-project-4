@@ -22,3 +22,12 @@
     margin-right: auto; 
     @content;
   }
+
+  // ----- Breakpoints ----- / 
+
+  @mixin mq {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+  

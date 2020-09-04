@@ -28,15 +28,10 @@
   background-color: #fd7856;
 }
 
-@media (min-width: 768px) {
-  .btn {
-    padding: 0.625em 1.875em;
-  }
-
-  .btn + .btn {
-    margin-left: 0.625em;
-  }
+.btn + .btn {
+  margin-left: 0.625em;
 }
+
 .form {
   flex-basis: 100%;
 }
