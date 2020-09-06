@@ -6,6 +6,7 @@
   padding: 0.625em 0;
   text-transform: uppercase;
   border-radius: 0.3125em;
+  transition: background-color 0.2s ease-in;
 }
 @media (min-width: 768px) {
   .btn {
@@ -21,21 +22,36 @@
 .default {
   background-color: #51ddfc;
 }
+.default:hover {
+  background-color: #9cecfd;
+}
 
 .error {
   background-color: #e4757a;
+}
+.error:hover {
+  background-color: #f1b5b8;
 }
 
 .info {
   background-color: #927bc1;
 }
+.info:hover {
+  background-color: #bdafd9;
+}
 
 .success {
   background-color: #63cc82;
 }
+.success:hover {
+  background-color: #9ddfb0;
+}
 
 .warning {
   background-color: #fd7856;
+}
+.warning:hover {
+  background-color: #feb4a2;
 }
 
 .form {
@@ -154,53 +170,40 @@
 
 @media (min-width: 768px) {
   .col-1 {
-    flex-basis: 8.33%;
+    flex-basis: calc(8.33% * 1);
   }
-
   .col-2 {
-    flex-basis: 16.67%;
+    flex-basis: calc(8.33% * 2);
   }
-
   .col-3 {
-    flex-basis: 25%;
+    flex-basis: calc(8.33% * 3);
   }
-
   .col-4 {
-    flex-basis: 33.33%;
+    flex-basis: calc(8.33% * 4);
   }
-
   .col-5 {
-    flex-basis: 41.67%;
+    flex-basis: calc(8.33% * 5);
   }
-
   .col-6 {
-    flex-basis: 50%;
+    flex-basis: calc(8.33% * 6);
   }
-
   .col-7 {
-    flex-basis: 58.33%;
+    flex-basis: calc(8.33% * 7);
   }
-
   .col-8 {
-    flex-basis: 66.67%;
+    flex-basis: calc(8.33% * 8);
   }
-
   .col-9 {
-    flex-basis: 75%;
+    flex-basis: calc(8.33% * 9);
   }
-
   .col-10 {
-    flex-basis: 83.33%;
+    flex-basis: calc(8.33% * 10);
   }
-
   .col-11 {
-    flex-basis: 91.67%;
-  }
-
-  .col-12 {
-    flex-basis: 100%;
+    flex-basis: calc(8.33% * 11);
   }
 }
+
 .img-logo, .img-frame, .img-avatar {
   display: block;
   margin-left: auto;

@@ -40,3 +40,11 @@
       }
     }
   }
+
+  // ----- Hover Effect ----- / 
+
+  @mixin hover($btn-color) {
+      &:hover {
+        background-color: lighten($btn-color, 15%);
+      } 
+  }

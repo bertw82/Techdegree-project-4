@@ -8,6 +8,7 @@
   padding: $gutter 0;
   text-transform: uppercase;
   border-radius: px-to-em(5, 16);
+  transition: background-color .2s ease-in;
   @include mq {
     padding: $gutter px-to-em(30, 16);
   }
@@ -18,25 +19,29 @@
   }
 }
 
-
 .default {
   background-color: $color-secondary;
+  @include hover($color-secondary);
 }
 
 .error {
-  background-color: #e4757a;
+  background-color: $color-error;
+  @include hover($color-error);
 }
 
 .info {
-  background-color: #927bc1;
+  background-color: $color-info;
+  @include hover($color-info);
 }
 
 .success {
-  background-color: #63cc82;
+  background-color: $color-success;
+  @include hover($color-success);
 }
 
 .warning {
-  background-color: #fd7856;
+  background-color: $color-warning;
+  @include hover($color-warning);
 }
 
 

@@ -3,7 +3,3 @@
 @function px-to-em($a, $b) {
   @return ($a / $b) * 1em;
 }
-
-// @function hover() {
-//   @return 
-// }
